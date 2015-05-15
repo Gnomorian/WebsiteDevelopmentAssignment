@@ -1,7 +1,7 @@
 $(document).ready(function() {
-		$('nav > li').bind('mouseover', openSubMenu);
-		$('nav > li').bind('mouseout', closeSubMenu);
-    
+		$('#topNav > li').bind('mouseover', openSubMenu);
+		$('#topNav > li').bind('mouseout', closeSubMenu);
+
 		function openSubMenu() {
 			$(this).find('ul').css('visibility', 'visible');
 		};
