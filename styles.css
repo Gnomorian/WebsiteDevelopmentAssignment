@@ -87,6 +87,29 @@ nav a:hover {
 	color: #c60c30;
 }
 
+/* Dropdown Menu */
+nav li ul {
+	position:absolute;
+	visibility:hidden;
+	border-top:1px solid #fff;
+	margin:0;
+	padding:0;
+}
+
+nav li ul li {
+	display:inline;
+	float:none;
+}
+
+nav li ul li a:link, nav li ul li a:visited {
+	background-color:#09F;
+	width:auto;
+}
+
+nav li ul li a:hover {
+	background-color:#0CF;
+}
+
 /* SlideShow layout */
 
 #sliderFrame, #sliderFrame div {
