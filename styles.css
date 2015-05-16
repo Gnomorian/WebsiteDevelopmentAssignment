@@ -87,28 +87,44 @@ nav a:hover {
 	color: #c60c30;
 }
 
-/* Dropdown Menu */
-nav li ul {
-	position:absolute;
-	visibility:hidden;
-	border-top:1px solid #fff;
-	margin:0;
-	padding:0;
+#topnav ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav li ul li {
-	display:inline;
-	float:none;
+/*Styles the dropdown sub-menu*/
+#topnav li li a:link, #topnav li li a:visited {
+    width: 10em;
+    float: left;
+    margin: 0;
+    padding: 7px 10px;
+    border: none;
 }
 
-nav li ul li a:link, nav li ul li a:visited {
-	background-color:#09F;
-	width:auto;
+/*Shows the dropdown menu*/
+#topnav ul li:hover ul {
+    left: auto;
 }
 
-nav li ul li a:hover {
-	background-color:#0CF;
+/*Keeps the last option of the dropdown aligned with the other ones*/
+#topnav li li {
+  padding: 1em 1em;
+  border-bottom: 1px solid #b4b4b4;
 }
+
+/*The underlying format of the menu*/
+#topnav ul ul {
+    z-index: 9999;
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 13.5em;
+    border-bottom: 1px solid #666666;
+    background-color: #eae7e7;
+}
+
+
 
 /* SlideShow layout */
 
